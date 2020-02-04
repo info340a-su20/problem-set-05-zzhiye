@@ -49,7 +49,7 @@ describe('Manipulates the DOM', () => {
     expect(blueBox.style.height).toEqual('100px');
   })
 
-  test('Implemented the renderPalette() function', () => {
+  test('Implemented the renderPaletteRow() function', () => {
     let paletteBox = document.createElement('main');
     solution.renderPalette(['red','green','blue'], paletteBox);
     let colorBoxes = $(paletteBox).find('.d-inline-block'); //find the boxes

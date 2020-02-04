@@ -42,7 +42,7 @@ attributes.
 
 
 /* Define a function `renderPaletteRow()` that takes in two arguments: array of 
-color strings (like a SINGLE ELEMENT of the `COLORS_9` array), and a "parent" 
+color strings (like a SINGLE ELEMENT of the `COLORS_9` object), and a "parent" 
 DOM element. The function should do the following:
   - Call the `getBoundingClientRect()` method on the "parent" DOM element to
     determine its width and height (look up the function to see how it works!)
@@ -55,7 +55,7 @@ DOM element. The function should do the following:
   - Append the container div to the parent element.
 
 You can test the function by calling it and passing it one of the `COLORS_9`
-palettes (e.g., `COLORS_9[0]`) and a reference to the the <main> element (not the
+palettes (e.g., `COLORS_9.Reds`) and a reference to the the <main> element (not the
 selector, but the element itself). Note that the palette will not resize with the
 browser window unless you refresh.
 
@@ -65,7 +65,7 @@ You should NOT include any test calls when running Jest tests!
 
 
 /* Define a function `renderPaletteTable()` that takes no arguments and renders 
-a color palette row for each of the palettes in the `COLORS_9` objects into the 
+a color palette row for each of the palettes in the `COLORS_9` object into the 
 <main> element. This function should _call_ your `renderPaletteRow()` function 
 as a helper.
 
