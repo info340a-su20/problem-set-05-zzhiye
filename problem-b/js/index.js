@@ -72,7 +72,7 @@ function `validatePasswordMatch()`. This function should access both password
   this same error message.
 - If the values ARE the same, use `setCustomValidity()` to set the
   `#passwordConfirmInput` element's error to be an empty string `""`.
-  Also change the `#passwordConfirmedFeedback` element so its `textContent` is
+  Also change the `#passwordConfirmFeedback` element so its `textContent` is
   also blank (an empty string).
 */
 
@@ -89,7 +89,7 @@ elements. You can select the elements individually or using `querySelectorAll()`
 the `querySelectorAll()` method to select all 4 of the <input> elements. Use the
 `forEach` function to loop through these inputs, and for each input add (another)
 event listener to respond to `input` events. In the event handler function, check
-if the <form> element has the `was-validted` class. If so, set the button's
+if the <form> element has the `was-validated` class. If so, set the button's
 `disabled` property to be `true` if the form is not valid, and `false` otherwise.
 
 This should disable the button until all of the fields are valid, but only after

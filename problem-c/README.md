@@ -1,4 +1,4 @@
-# Problem B
+# Problem: To Do List (DOM)
 
 In this exercise, you will practice writing JavaScript to work with DOM events and implement a simple to-do-list app:
 
