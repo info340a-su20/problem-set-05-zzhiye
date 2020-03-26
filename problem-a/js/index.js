@@ -41,16 +41,26 @@ attributes.
 
 
 
+/* Define a function `getElementWidth()` that takes in a DOM element (not a 
+string!). This function should return the width in pixels (a number) of that
+element.
+ - Determine this width by calling the `getBoundingClientRect()` method on the
+   argument element. This method returns an Object containing the element's
+   width and height. Return the `width` value of that object.
+*/
+
+
+
 /* Define a function `renderPaletteRow()` that takes in two arguments: array of 
 color strings (like a SINGLE ELEMENT of the `COLORS_9` object), and a "parent" 
 DOM element. The function should do the following:
-  - Call the `getBoundingClientRect()` method on the "parent" DOM element to
-    determine its width and height (look up the function to see how it works!)
   - Create a new `div` element to contain a row of colored boxes
   - Use the `createColorBox()` function to create a div FOR EACH element in the 
     argument array. Each "color box" should take up an equal portion of the 
     parent element (e.g., if the parent has a width of 600 and the array has 3 
-    elements, each color box would be 200px in size).
+    elements, each color box would be 200px in size).    
+    You should use your `getElementWidth()` function (passing in the "parent" 
+    DOM element) to determine its width.
   - Append EACH "color box" to the container div you created.
   - Append the container div to the parent element.
 
