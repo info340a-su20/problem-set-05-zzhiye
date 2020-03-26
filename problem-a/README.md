@@ -1,4 +1,4 @@
-# Problem A
+# Problem: Color Swatches
 
 In this exercise, you will practice using JavaScript to manipulate the DOM. In particular, you will dynamically generate a visualization of some color schemes:
 
