@@ -49,22 +49,19 @@ let state = {
 
 
 
-//Add an event listener to the "add task"`button` (check the HTML for its id!) 
-//so that when the button is clicked, your `addNewTask()` function is called
-//(thereby adding a new task is added to the list).
-//
-//Note that initially, this will cause "empty" (text-less) tasks to be added!
-
-
-
 //To handle user input, add another event listener to the `<input>` element that
 //listens for `'input'` events (from when the user types something into the box).
 //This listener should use an ANONYMOUS callback function to update the state's 
 //`inputtedText` property to have the `value` of the `<input>` element.
+
+
+
+//Add an event listener to the "add task"`button` (check the HTML for its id!) 
+//so that when the button is clicked, your `addNewTask()` function is called
+//(thereby adding a new task is added to the list).
 //
 //You should now be able to add new items to your task list!
 //Note that items will not add when you hit the "enter" key.
-
 
 
 

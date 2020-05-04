@@ -16,7 +16,8 @@ for this event listener, do the following:
   4. If the form IS NOT valid, add a class called `was-validated` to the `form`. 
      This Bootstrap class will cause validation styling to be applied.
      Also you should disable the submit `button` by assigning its `disabled` 
-     attribute a value of `true`.
+     attribute a value of `true` (set the attribute directly with dot notation, 
+     don't use `setAttribute()`).
 */
 
 
@@ -91,6 +92,7 @@ the `querySelectorAll()` method to select all 4 of the <input> elements. Use the
 event listener to respond to `input` events. In the event handler function, check
 if the <form> element has the `was-validated` class. If so, set the button's
 `disabled` property to be `true` if the form is not valid, and `false` otherwise.
+(set the property directly with dot notation, don't use `setAttribute()`)
 
 This should disable the button until all of the fields are valid, but only after
 the user tries to submit once (which is a polite user experience)
